@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=Poppins&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.App {
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(40, 44, 52, .5), rgba(40, 44, 52, .5)), url('./weather.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 250vh;
+  padding-top: 30px;
+}
+
+.search-container{
+  display:flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-input {
+  width: 400px;
+  height: 20px;
+  padding: 20px;
+  background: #e9ecf3;
+  border: blue;
+  outline: none;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 20px;
+  
+}
+
+.searched-result {
+  width: 700px;
+  height: 320px;
+  background: linear-gradient(210deg, rgba(0, 0, 0, .5), rgb(0, 0, 0)), url('./bg.jpg') no-repeat center center/cover;
+  margin-top: 20px;
+  text-align: left;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+
+.searched-result .country p:nth-child(1) {
+  text-align: right;
+  color: rgb(145, 145, 145) !important;
+}
+
+.searched-result .temp {
+  display: flex; 
+  align-items: center; 
+  font-size: 18px;
+}
+
+.temperature-value{
+ margin-left:5px;   
+}
+
+
+.searched-result .temp p:nth-child(1) {
+  font-size: 30px;
+  text-align: left;
+}
+
+.searched-result .bottom .description1 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.searched-result .bottom .description1 .feels p:nth-child(1), .searched-result .bottom .description1 .humidity p:nth-child(1), .searched-result .bottom .description1 .wind p:nth-child(1) {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.forecast-day {
+  display: inline-block;
+  vertical-align: top; 
+  color:white;
+  padding-right: 30px;
+  cursor:pointer;
+
+}
+
+.forecast-days {
+  display: inline-block;
+  vertical-align: top; 
+  text-align: left;
+  color:white;
+  padding-right: 20px;
+
+}
+.forecast {
+  display: inline-block;
+  margin-right: 480px; 
+  vertical-align: top; 
+  text-align: left;
+  color:white;
+  
+}
+
+.day-forecast {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Example background color */
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+.day-forecast p {
+  margin: 5px 0;
+}
+
+/* Example icon styling */
+.day-forecast .icon {
+  color: #fff;
+  margin-right: 5px;
+}
+
+.hourly-forecast {
+  margin-top: 20px;
+  text-align: left;
+  color:white;
+  
+}
+
+.hourly-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding:10px;
+}
+
+.hourly-item {
+  width: 100px; 
+  margin-bottom: 20px;
+  background:linear-gradient(210deg, rgba(0, 0, 0, .5), rgb(0, 0, 0)), url('./bg.jpg') no-repeat center center/cover;
+  color:white;
+  padding:10px;
+}
+
+.hourly-item div {
+  text-align: center;
+}
+
+.search-history {
+  display:flex;
+  flex-wrap: wrap ;
+  margin-top: 10px;
+  cursor:pointer;
+}
+
+.search-history-item {
+  display: flex; 
+  align-items: center;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-sizing: content-box;
+  background: transparent;
+  color:#fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.options {
+  margin-left:10px;
+}
+
+
+
